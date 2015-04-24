@@ -3,7 +3,7 @@ package airport.airlines;
 import java.util.ArrayList;
 
 /**
- * Object, that organizes the Airlines
+ * A Class, that organizes some Airlines
  * @author christianverdion
  *
  */
@@ -12,7 +12,9 @@ public class Airlines {
 	ArrayList<Airline> airlines = new ArrayList<Airline>();
 	
 	public String printAirlineInformation(String informationString) {
-		//TODO implement this Method
+		for (Airline airline : airlines) {
+			
+		}
 		return informationString;
 	}
 

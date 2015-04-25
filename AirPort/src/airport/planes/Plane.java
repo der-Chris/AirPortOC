@@ -1,5 +1,6 @@
 package airport.planes;
 
+import airport.utilities.FlightData;
 import airport.utilities.WorldMap;
 
 public abstract class Plane {

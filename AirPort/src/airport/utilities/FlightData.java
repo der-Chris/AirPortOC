@@ -1,6 +1,5 @@
-package airport.planes;
+package airport.utilities;
 
-import airport.utilities.Location;
 
 /**
  * Class, which stores the Data of a Flight

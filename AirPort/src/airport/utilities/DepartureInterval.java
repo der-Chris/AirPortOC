@@ -6,8 +6,8 @@ package airport.utilities;
  *
  */
 public enum DepartureInterval {
-	
-	// 60.000 Milliseconds are 1 Second
+
+	// 60.000 Milliseconds are 1 Minute
 	// 3.600.000 Milliseconds are 1 Hour
 
 	Every1Min(1 * 60000),
@@ -16,8 +16,10 @@ public enum DepartureInterval {
 	Every10Min(10 * 60000), 
 	Every30Min(30 * 60000), 
 	Every1h(1 * 3600000);
-	
-	private DepartureInterval(long timeInMilli) {
-		// TODO Auto-generated constructor stub
+
+	long intervallTime;
+
+	private DepartureInterval(long intervallTime) {
+		this.intervallTime = intervallTime;
 	}
 }

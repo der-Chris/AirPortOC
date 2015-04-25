@@ -24,4 +24,10 @@ public class Location {
 	public String printLocation(String informationString) {
 		return informationString + latitude + " " + longitude;
 	}
+	
+	public double getDistance(Location location) {
+		double result = 0;
+		result = Math.pow(this.latitude - location.latitude, 2.0) + Math.pow(this.longitude - location.longitude, 2.0);
+		return Math.sqrt(result);
+	}
 }

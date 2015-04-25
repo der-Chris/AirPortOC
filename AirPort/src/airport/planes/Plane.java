@@ -18,12 +18,9 @@ public class Plane {
 		this.planeData = planeData;
 		this.flightData = flightData;
 	}
-
-	public void departure() {
+	
+	public void updatePlane() {
 		
-	}
-
-	public void arrival() {
 		
 	}
 
@@ -39,12 +36,16 @@ public class Plane {
 		this.flightData.printTimeData(informationString);
 		return informationString;
 	}
-
-	public void dontFlyAway() {
-		// TODO implement this Method
+	
+	public double getFlightDuration() {
+		return this.flightData.getFlightDuration();		
 	}
 
-	public void flyAway() {
-		// TODO implement this Method
-	}
+//	public void dontFlyAway() {
+//		// TODO implement this Method
+//	}
+//
+//	public void flyAway() {
+//		// TODO implement this Method
+//	}
 }

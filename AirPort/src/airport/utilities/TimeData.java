@@ -25,4 +25,14 @@ public class TimeData {
 	public void changeDepartureTime(Date date) {
 		this.departure = date;
 	}
+	
+	/**
+	 * Adds the time, the flight takes to the departure time and stores it in the arrival time
+	 * @param flightTime the time, the flight takes in minutes
+	 * 60.000 Milliseconds are 1 Minute
+	 */
+	public void setArrivalTime(double flightTime) {
+		long flightTimeInMilli = (long) (flightTime * 60000L);
+		this.arrival = new Date(departure.getTime() + flightTimeInMilli);
+	}
 }

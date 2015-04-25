@@ -9,27 +9,33 @@ import java.util.Date;
  *
  */
 public class FlightData {
-	
-	
+
+
 	private TimeData timeData;
-	private Location location;
-	
-	public FlightData(TimeData timeData, Location location) {
-		// TODO Auto-generated constructor stub
+	private FlightPlan flightPlan;
+
+	public FlightData(TimeData timeData, FlightPlan flightPlan) {
+		this.flightPlan = flightPlan;
+		this.timeData = timeData;
 	}
-	
+
 	public String printTimeData(String informationString) {
 		this.timeData.printArrival(informationString);
 		this.timeData.printDeparture(informationString);
 		return informationString;
 	}
 	
-	public String printLocation(String informationString) {
-		return this.location.printLocation(informationString);
+	public double getFlightDuration() {
+		double result = this.flightPlan.getFlightDuration();
+		this.flightPlan.updateTimeData(this.timeData, result);
+		return result;
 	}
-	
-	public void changeDepartureTime(Date date) {
-		this.timeData.changeDepartureTime(date);
-	}
-	
+
+//	public String printLocation(String informationString) {
+//		return this.location.printLocation(informationString);
+//	}
+//
+//	public void changeDepartureTime(Date date) {
+//		this.timeData.changeDepartureTime(date);
+//	}
 }

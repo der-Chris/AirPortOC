@@ -5,11 +5,11 @@ import airport.utilities.Pin;
 import airport.utilities.WorldMap;
 
 /**
- * The blueprint for a Plane
+ * The for a Plane
  * @author christianverdion
  *
  */
-public abstract class Plane {
+public class Plane {
 
 	private PlaneData planeData;
 	private FlightData flightData;
@@ -19,9 +19,13 @@ public abstract class Plane {
 		this.flightData = flightData;
 	}
 
-	public abstract void departure();
+	public void departure() {
+		
+	}
 
-	public abstract void arrival();
+	public void arrival() {
+		
+	}
 
 	public WorldMap printPosition(WorldMap worldMap) {
 		// TODO create Pin, give it to planeData and flightData to let it be filled

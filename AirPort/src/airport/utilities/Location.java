@@ -20,4 +20,8 @@ public class Location {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
+
+	public String printLocation(String informationString) {
+		return informationString + latitude + " " + longitude;
+	}
 }

@@ -21,4 +21,8 @@ public class TimeData {
 		informationString = informationString + "\t" + arrival.toString();
 		return informationString;
 	}
+	
+	public void changeDepartureTime(Date date) {
+		this.departure = date;
+	}
 }

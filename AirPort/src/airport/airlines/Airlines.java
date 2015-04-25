@@ -17,5 +17,9 @@ public class Airlines {
 		}
 		return informationString;
 	}
+	 
+	public void addAirline(Airline airline) {
+		this.airlines.add(airline);
+	}
 
 }

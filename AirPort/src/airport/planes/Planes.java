@@ -17,4 +17,8 @@ public class Planes {
 		}
 		return informationString;
 	}
+	
+	public void addPlane(Plane plane) {
+		this.planes.add(plane);
+	}
 }

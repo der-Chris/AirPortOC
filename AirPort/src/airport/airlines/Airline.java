@@ -1,5 +1,6 @@
 package airport.airlines;
 
+import airport.planes.Plane;
 import airport.planes.Planes;
 
 /**
@@ -18,5 +19,9 @@ public abstract class Airline {
 	public String printPlaneInformation(String informationString) {
 		planes.printPlaneInformations(informationString);
 		return informationString;
+	}
+	
+	public void addPlane(Plane plane) {
+		this.planes.addPlane(plane);
 	}
 }
